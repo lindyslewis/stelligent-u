@@ -68,5 +68,5 @@ export AWS_PROFILE=labs-mfa
 Use the following syntax to access the AWS CLI 
 
 ```
-aws --profile labs-mfa s3api list-buckets
+aws s3api list-buckets
 ```
