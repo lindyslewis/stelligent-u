@@ -1,6 +1,4 @@
-# Lab 1.1.4 Guide
-
-## Lab 1.1.4: Using Conditions
+# Lab 1.1.4: Using Conditions
 
 Update the same template one final time. This time, use a CloudFormation
 [Condition](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/conditions-section-structure.html)
