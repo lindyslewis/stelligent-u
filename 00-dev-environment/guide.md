@@ -59,7 +59,7 @@ Run auto-mfa.sh and follow the prompts
 ./auto-mfa.sh
 ```
 
-Now set your `AWS_PROFLE` environment variable to `temp`
+Now set your `AWS_PROFLE` environment variable to `labs-mfa`
 
 ```
 export AWS_PROFILE=labs-mfa
