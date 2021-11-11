@@ -1,0 +1,31 @@
+AWSTemplateFormatVersion: "2010-09-09"
+
+Description: IAM User and a Managed Policy. Exports the ARN of the Policy.
+
+Parameters:
+  UserName:
+    Type: String
+    Description: New account name
+
+Resources:
+  StelliUser:
+    Type: AWS::IAM::User
+    Properties:
+      UserName: !Ref 'UserName'
+  StelliPolicy:
+    Type: AWS::IAM::Policy
+    Properties:
+      PolicyName: StelliUsersPolicy
+      Users: [!Ref 'StelliUser']
+      PolicyDocument:
+        Statement:
+          Effect: Allow
+          Action: ['s3:ListAllMyBuckets', 's3:ListBucket', 's3:GetObject', 's3:GetObjectVersion']
+          Resource: 'arn:aws:s3:::*'
+
+Outputs:
+  StelliPolicyARN:
+    Description: Arn of the Managed Poicy
+    Value: !Ref StelliPolicy
+    Export:
+      Name: StelliPolicyARN
