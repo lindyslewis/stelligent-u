@@ -1,6 +1,4 @@
-# Lab 2.1.4 - Guide
-
-## Lab 2.1.4: Clean Up
+# Lab 2.1.4: Clean Up
 
 Clean up: remove your bucket. What do you have to do before you can
 remove it?

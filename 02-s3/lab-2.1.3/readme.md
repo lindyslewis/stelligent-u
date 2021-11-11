@@ -1,6 +1,4 @@
-# Lab 2.1.3 - Guide
-
-## Lab 2.1.3: Exclude Private Objects When Uploading to a Bucket
+# Lab 2.1.3: Exclude Private Objects When Uploading to a Bucket
 
 Add a private file to your data directory. Then, upload the directory to your
 bucket again **without including the private file**.
