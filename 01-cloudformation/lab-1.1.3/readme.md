@@ -1,6 +1,4 @@
-# Lab 1.1.3 Guide
-
-#### Lab 1.1.3: Pseudo-Parameters
+# Lab 1.1.3: Pseudo-Parameters
 
 Update the same template by prefixing the name of the bucket with the
 Account ID in which it is being created, no matter which account you're
