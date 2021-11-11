@@ -1,6 +1,4 @@
-# Lab 1.1.1 Guide
-
-## Lab 1.1.1: CloudFormation Template Requirements
+# Lab 1.1.1: CloudFormation Template Requirements
 
 Create the *most minimal CFN template possible* that can be used to
 create an AWS Simple Storage Service (S3) Bucket.
