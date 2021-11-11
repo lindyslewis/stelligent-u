@@ -1,0 +1,24 @@
+AWSTemplateFormatVersion: "2010-09-09"
+
+Description: IAM User
+
+Parameters:
+  UserName:
+    Type: String
+    Description: New account name
+
+Resources:
+  StelliUser:
+    Type: AWS::IAM::User
+    Properties:
+      UserName: !Ref 'UserName'
+  StelliPolicy:
+    Type: AWS::IAM::Policy
+    Properties:
+      PolicyName: StelliUsersPolicy
+      Users: [!Ref 'StelliUser']
+      PolicyDocument:
+        Statement:
+          Effect: Allow
+          Action: ['s3:ListAllMyBuckets', 's3:ListBucket', 's3:GetObject', 's3:GetObjectVersion']
+          Resource: 'arn:aws:s3:::*'
