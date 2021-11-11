@@ -1,0 +1,15 @@
+AWSTemplateFormatVersion: "2010-09-09"
+
+Description: Create S3 Bucket. Get bucket name as a parameter
+
+Parameters:
+  BucketNameParam:
+    Default: 'lindy-lewis-lab-1-1-3-bucket-default'
+    Description: 'Name of the Bucket to be created. Must be globally-unique.'
+    Type: String
+
+Resources:
+  MyS3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Join [ "-", [ !Ref AWS::AccountId, !Ref BucketNameParam]]
