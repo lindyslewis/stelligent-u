@@ -1,0 +1,17 @@
+AWSTemplateFormatVersion: "2010-09-09"
+
+Description: IAM User that uses an existing Managed Policy that was previously exported
+
+Parameters:
+  UserName:
+    Type: String
+    Description: New account name
+
+Resources:
+  StelliUser:
+    Type: AWS::IAM::User
+    Properties:
+      UserName: !Ref 'UserName'
+      ManagedPolicyArns:
+        - !ImportValue StelliPolicyARN
+

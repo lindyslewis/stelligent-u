@@ -13,11 +13,12 @@ Resources:
     Properties:
       UserName: !Ref 'UserName'
   StelliPolicy:
-    Type: AWS::IAM::Policy
+    Type: AWS::IAM::ManagedPolicy
     Properties:
-      PolicyName: StelliUsersPolicy
+      ManagedPolicyName: StelliUsersPolicy
       Users: [!Ref 'StelliUser']
       PolicyDocument:
+        Version: '2012-10-17'
         Statement:
           Effect: Allow
           Action: ['s3:ListAllMyBuckets', 's3:ListBucket', 's3:GetObject', 's3:GetObjectVersion']
