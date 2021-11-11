@@ -1,6 +1,4 @@
-# Lab 1.1.2 Guide
-
-## Lab 1.1.2: Stack Parameters
+# Lab 1.1.2: Stack Parameters
 
 Update the same template by adding a CloudFormation
 [Parameter](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html)
