@@ -1,6 +1,4 @@
-# Lab 1.1.5 Guide
-
-## Lab 1.1.5: Termination Protection; Clean up
+# Lab 1.1.5: Termination Protection; Clean up
 
 - Before deleting this lesson's Stacks, apply
   [Termination Protection](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-protect-stacks.html)
