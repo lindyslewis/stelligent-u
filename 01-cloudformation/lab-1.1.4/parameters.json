@@ -1,0 +1,10 @@
+[
+  {
+    "ParameterKey": "BucketNameParam",
+    "ParameterValue": "lindy-lewis-lab-1-1-4-bucket"
+  },
+  {
+      "ParameterKey": "PreferredRegion",
+      "ParameterValue": "us-east-1"
+  }
+]
