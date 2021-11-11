@@ -1,6 +1,4 @@
-# Lab 1.2.1 Guide
-
-## Lab 1.2.1: Cross-Referencing Resources within a Template
+# Lab 1.2.1: Cross-Referencing Resources within a Template
 
 Create a CFN template that describes two resources: an IAM User, and an
 IAM Managed Policy that controls that user.
