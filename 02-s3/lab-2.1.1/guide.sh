@@ -16,7 +16,7 @@ Using "aws s3", create a bucket:
 
 ```
 # Create a Bucket
-aws s3api create-bucket --bucket stelligent-u-lindylewis --region us-west-2 --create-bucket-configuration LocationConstraint=us-west-2
+aws s3 mb s3://stelligent-u-lindylewis --region 'us-west-2'
 ```
 
 ```
